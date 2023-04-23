@@ -13,6 +13,8 @@ def sum_even(result):  # Сумма четных чисел из диапазо�
     for k in range(len(result)):
         if result[k] % 2 == 0:  # and result[k] < 4000000 (если по условию задачи)
             evensum.append(result[k])
+# Функцию можно также представить в виде:
+# evensum = [res[k] for k in range(len(res)) if res[k] % 2 == 0]
     return sum(evensum)
 
 
